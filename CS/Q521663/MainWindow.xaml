@@ -1,0 +1,44 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" 
+        xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" 
+        xmlns:local="clr-namespace:Q521663"
+        x:Class="Q521663.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate x:Key="itemTemplate">
+            <ContentControl>
+                <dxb:BarButtonItem Content="{Binding Name}"/>
+            </ContentControl>
+        </DataTemplate>
+        <DataTemplate x:Key="groupTemplate">
+            <ContentControl>
+                <dxr:RibbonPageGroup Caption="{Binding Name}" ItemLinksSource="{Binding Items}" ItemTemplate="{StaticResource itemTemplate}"/>
+            </ContentControl>
+        </DataTemplate>
+        <DataTemplate x:Key="pageTemplate">
+            <ContentControl>
+                <dxr:RibbonPage Caption="{Binding Name}" GroupsSource="{Binding Groups}" GroupTemplate="{StaticResource groupTemplate}"/>
+            </ContentControl>
+        </DataTemplate>
+        <DataTemplate x:Key="categoryTemplate">
+            <ContentControl>
+                <dxr:RibbonDefaultPageCategory Caption="{Binding Name}" PagesSource="{Binding Pages}" PageTemplate="{StaticResource pageTemplate}"/>
+            </ContentControl>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <dxb:BarManager>
+            <DockPanel>
+                <dxr:RibbonControl DockPanel.Dock="Top" CategoriesSource="{Binding Categories}" CategoryTemplate="{StaticResource categoryTemplate}"/>
+                <dxr:RibbonStatusBarControl DockPanel.Dock="Bottom"/>
+                <Grid/>
+            </DockPanel>
+        </dxb:BarManager>
+
+    </Grid>
+</Window>
