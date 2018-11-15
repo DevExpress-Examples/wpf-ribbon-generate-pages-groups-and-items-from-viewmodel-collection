@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/Q521663/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/Q521663/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/Q521663/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/Q521663/MainWindow.xaml.vb))
+* [ViewModel.cs](./CS/Q521663/ViewModel.cs) (VB: [ViewModel.vb](./VB/Q521663/ViewModel.vb))
+<!-- default file list end -->
 # How to generate Ribbon pages, groups and items based on a view model collection
 
 
