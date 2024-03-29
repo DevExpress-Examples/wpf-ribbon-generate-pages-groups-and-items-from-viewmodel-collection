@@ -15,29 +15,12 @@
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
     <Platforms>x86;AnyCPU</Platforms>
-    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="PresentationUI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.Linq" />
-    <Reference Include="System.Data.Services.Client" />
-  </ItemGroup>
   <ItemGroup>
     <AppDesigner Include="My Project\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Data" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Data.Desktop" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Mvvm" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Office.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Pdf.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Printing.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Export" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Reporting" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Ribbon" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.2.*-*" />
   </ItemGroup>
