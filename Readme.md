@@ -3,18 +3,31 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5215)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WPF Ribbon - Generate Pages, Groups, and Items from a ViewModel Collection
+
+This example generates ribbon pages ([RibbonPage](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPage)), groups ([RibbonPageGroup](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPageGroup)), and items ([BarButtonItem](https://docs.devexpress.com/WPF/DevExpress.Xpf.Bars.BarButtonItem)) from a View Model collection:
+
+![image](https://github.com/DevExpress-Examples/wpf-ribbon-generate-pages-groups-and-items-from-viewmodel-collection/assets/65009440/49d2f725-0ec0-4af8-b315-f78b353a21ac)
+
+To generate pages in the [RibbonPageCategory](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPageCategory), bind the [RibbonPageCategoryBase.PagesSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPageCategoryBase.PagesSource) property to a collection. Use the [RibbonPageCategoryBase.PageTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPageCategoryBase.PageTemplate) property to specify a template for generated pages.
+
+The [RibbonPage](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPage) and [RibbonPageGroup](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPageGroup) contain similar properties that allow you to generate groups and bar items:
+
+* [RibbonPage.GroupsSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPage.GroupsSource), [RibbonPage.GroupTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPage.GroupTemplate)
+* [RibbonPageGroup.ItemLinksSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPageGroup.ItemLinksSource), [RibbonPageGroup.ItemTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPageGroup.ItemTemplate)
+
+## Files to Review
 
 * [MainWindow.xaml](./CS/Q521663/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/Q521663/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/Q521663/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/Q521663/MainWindow.xaml.vb))
 * [ViewModel.cs](./CS/Q521663/ViewModel.cs) (VB: [ViewModel.vb](./VB/Q521663/ViewModel.vb))
-<!-- default file list end -->
-# How to generate Ribbon pages, groups and items based on a view model collection
 
+## Documentation
 
-<p>This example demonstrates how to generate pages, groups and items from a collection according to the MVVM pattern. To generate pages in the RibbonPageCategory, bind the <a href="https://documentation.devexpress.com/#WPF/DevExpressXpfRibbonRibbonPageCategoryBase_PagesSourcetopic"><u>PagesSource</u></a> property to a collection. Use the <a href="https://documentation.devexpress.com/#WPF/DevExpressXpfRibbonRibbonPageCategoryBase_PageTemplatetopic"><u>PageTemplate</u></a> property to specify a template for generated pages.</p><p>RibbonPage and RibbonPageGroup contain similar properties for generating groups and bar items:</p><p>- <a href="https://documentation.devexpress.com/#WPF/DevExpressXpfRibbonRibbonPage_GroupsSourcetopic"><u>GroupsSource</u></a>, <a href="https://documentation.devexpress.com/#WPF/DevExpressXpfRibbonRibbonPage_GroupTemplatetopic"><u>GroupTemplate</u></a></p><p>- <a href="https://documentation.devexpress.com/#WPF/DevExpressXpfRibbonRibbonPageGroup_ItemLinksSourcetopic"><u>ItemLinksSource</u></a>, <a href="https://documentation.devexpress.com/#WPF/DevExpressXpfRibbonRibbonPageGroup_ItemTemplatetopic"><u>ItemTemplate</u></a></p>
+* [WPF Ribbon, Bars, and Menu: MVVM Support](https://docs.devexpress.com/WPF/10434/controls-and-libraries/ribbon-bars-and-menu/common-concepts/mvvm-support)
+* [Ribbon Structure ](https://docs.devexpress.com/WPF/7954/controls-and-libraries/ribbon-bars-and-menu/ribbon/ribbon-structure/ribbon-control)
 
-<br/>
+## More Examples
 
-
+* [Create a WPF RibbonControl](https://github.com/DevExpress-Examples/wpf-create-a-ribboncontrol)
+* [WPF Bars - Generate Bar Items from a View Model Collection in an MVVM Application](https://github.com/DevExpress-Examples/wpf-bars-mvvm-generate-bars-from-view-model-collection)
