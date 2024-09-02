@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <RootNamespace></RootNamespace>
     <AssemblyName>Q521663</AssemblyName>
@@ -21,7 +21,7 @@
     <AppDesigner Include="My Project\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="24.2.*-*" />
   </ItemGroup>
 </Project>
