@@ -33,7 +33,7 @@ The [RibbonPage](https://docs.devexpress.com/WPF/DevExpress.Xpf.Ribbon.RibbonPag
 * [Create a WPF RibbonControl](https://github.com/DevExpress-Examples/wpf-create-a-ribboncontrol)
 * [WPF Bars - Generate Bar Items from a View Model Collection in an MVVM Application](https://github.com/DevExpress-Examples/wpf-bars-mvvm-generate-bars-from-view-model-collection)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-ribbon-generate-pages-groups-and-items-from-viewmodel-collection&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-ribbon-generate-pages-groups-and-items-from-viewmodel-collection&~~~was_helpful=no)
 
